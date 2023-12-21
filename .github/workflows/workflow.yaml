@@ -42,7 +42,7 @@ jobs:
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
-        if: ${{ env.HAS_UPLOADS }} == '1'
+        if: ${{ env.HAS_UPLOADS == '1' }}
         with:
           if-no-files-found: ignore
           name: uploads
